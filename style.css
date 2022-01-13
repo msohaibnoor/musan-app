@@ -21,6 +21,9 @@ nav ul {
   flex: 8;
   margin-right: 50px;
 }
+nav ul li {
+  cursor: pointer;
+}
 nav ul li a {
   color: #000;
   text-decoration: none;
@@ -48,12 +51,32 @@ nav button {
   /* background-color: coral; */
   gap: 30px;
 }
+.section1-title {
+  font-size: 72px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px 0px;
+}
+.section1-title-sub-txt {
+  font-size: 40px;
+  padding: 10px 0px;
+  letter-spacing: 1px;
+}
+.section1-para {
+  width: 334px;
+  padding-bottom: 10px;
+  color: #7a7a86;
+  letter-spacing: 1px;
+}
 .section-1 .section1-left-side {
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: end;
+}
+.section1-btns img {
+  cursor: pointer;
 }
 .section-1 .section1-right-side {
   flex-basis: 50%;
@@ -64,10 +87,12 @@ nav button {
   color: #fff;
   display: flex;
   justify-content: center;
-  background-position: 10px 15px;
+  background-position: 105px 2px;
 }
-.section1 .section1-right-side .musan-mobile {
+.section-1 .section1-right-side .musan-mobile {
   height: 640px;
+  margin-top: 46px;
+  margin-right: 34px;
 }
 .section-1 .appstore-btn {
   width: 150px;
@@ -230,6 +255,9 @@ nav button {
 .footer-btns {
   margin: 10px 30px 10px 10px;
 }
+.footer-btns img {
+  cursor: pointer;
+}
 .footer-btns .appstore-btn {
   width: 150px;
 }
@@ -249,8 +277,53 @@ nav button {
   position: absolute;
   top: 70px;
 }
+.db-logo {
+  display: none;
+}
+@media screen and (max-width: 1013px) {
+  .section-1 {
+    flex-wrap: wrap;
+    padding: 30px 0 0 0;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-1 .section1-left-side {
+    flex-basis: 100%;
+    align-items: center;
+  }
+  .section-1 .section1-right-side {
+    flex-basis: 100%;
+    background-position: 229px 2px;
+  }
+  .section-1 .section1-right-side .musan-mobile {
+    height: 500px;
+    margin: 0px;
+    margin-top: 30px;
+  }
+  .footer {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  .footer .footer-section3 {
+    padding: 0px;
+  }
+  .footer-section2 {
+    display: none !important;
+  }
+}
 
 @media screen and (max-width: 660px) {
+  .section-1 .section1-right-side {
+    background-position: 10px 6px;
+  }
+  .section1-title {
+    font-size: 40px;
+    padding: 0px;
+  }
+  .section1-title-sub-txt {
+    font-size: 28px;
+  }
   .section-4 {
     flex-direction: column;
     height: 480px;
@@ -279,14 +352,50 @@ nav button {
   }
   .footer {
     flex-direction: column;
-    height: 600px;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-section1 .footer-cars {
+    margin-left: 100px;
+  }
+  .footer-cars .car2 {
+    margin-left: 0px;
+  }
+  .footer-clouds {
+    top: 181px;
+    left: 8px;
   }
   .footer .footer-section1 .footer-mobile {
     height: 400px;
     top: -54px;
     left: -98px;
   }
+  .footer-cars .car3 {
+    margin-left: 0px;
+  }
   .footer .footer-section3 {
     padding: 0px;
+  }
+  .footer-car {
+    bottom: -3px;
+    left: -153px;
+  }
+  .footer-contact-online {
+    font-size: 28px;
+    margin-left: 35px;
+  }
+  .social-icons {
+    margin-right: 50px;
+  }
+  .footer-txt-para {
+    margin-left: 0px;
+  }
+  .db-logo {
+    display: block;
+  }
+  .follow-us {
+    margin: 10px;
   }
 }
