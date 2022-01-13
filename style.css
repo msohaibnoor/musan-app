@@ -110,7 +110,7 @@ nav button {
   text-align: center;
 }
 .section5-card {
-  background: red;
+  /* background: red; */
   width: 80%;
   margin: 50px auto;
   display: flex;
